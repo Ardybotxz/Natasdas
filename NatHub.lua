@@ -8,14 +8,16 @@ if premium then
         [6325068386] = "https://api.luarmor.net/files/v4/loaders/a0ad31cf58a8bd98dd82fa1fb648290f.lua", -- BLR
         [4777817887] = "https://api.luarmor.net/files/v4/loaders/d53370331c9ca16ce3479c3ac6ae5a78.lua", -- Bladeball
         [7095682825] = "https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/beaks.lua", -- Beaks
-        [994732206] = "https://api.luarmor.net/files/v4/loaders/446a745866c1abf8459657502b7818fc.lua" -- Blox Fruit
+        [994732206] = "https://api.luarmor.net/files/v4/loaders/446a745866c1abf8459657502b7818fc.lua", -- Blox Fruit
+        [4658598196] = "https://api.luarmor.net/files/v4/loaders/27394fa4dc9c7268a839f2c98b6a35f7.lua"
     }
     scriptID = {
         [7436755782] = "483d639ad74a7814ff1057d68cec56c2", -- Grow a Garden
         [7018190066] = "d3a76114c1ea182127b88170b6043d11", -- Dead Rails
         [6325068386] = "a0ad31cf58a8bd98dd82fa1fb648290f", -- BLR
         [4777817887] = "d53370331c9ca16ce3479c3ac6ae5a78", -- BB
-        [994732206] = "446a745866c1abf8459657502b7818fc"
+        [994732206] = "446a745866c1abf8459657502b7818fc",
+        [4658598196] = "27394fa4dc9c7268a839f2c98b6a35f7"
     }
 else
     supportedGames = {
@@ -25,14 +27,16 @@ else
         [6325068386] = "https://api.luarmor.net/files/v4/loaders/50ba70185011d66f3ed97e4e7f50bd11.lua", -- BLR
         [4777817887] = "https://api.luarmor.net/files/v4/loaders/6f48a7a95292a0885256d242900d81fb.lua", -- Bladeball
         [7095682825] = "https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/beaks.lua", -- Beaks
-        [994732206] = "https://api.luarmor.net/files/v4/loaders/1ba7f8bc6888d119d65cdafbe3d78527.lua" -- Blox Fruit
+        [994732206] = "https://api.luarmor.net/files/v4/loaders/1ba7f8bc6888d119d65cdafbe3d78527.lua", -- Blox Fruit
+        [4658598196] = "https://api.luarmor.net/files/v4/loaders/5698b5c40f0217c268e673ef5e7b6581.lua"
     }
     scriptID = {
         --[7436755782] = "65c66a87b33565a9dea1a54b798b6b2a", -- Grow a Garden
         [7018190066] = "a3e99a8c1a465fc973e7aa0dda0e220c", -- Dead Rails
         [6325068386] = "50ba70185011d66f3ed97e4e7f50bd11", -- BLR
         [4777817887] = "6f48a7a95292a0885256d242900d81fb", -- BB
-        [994732206] = "1ba7f8bc6888d119d65cdafbe3d78527"
+        [994732206] = "1ba7f8bc6888d119d65cdafbe3d78527",
+        [4658598196] = "5698b5c40f0217c268e673ef5e7b6581"
     }
 end
 local gameNames = {
@@ -42,7 +46,8 @@ local gameNames = {
     [4777817887] = "Blade Ball", -- Blade Ball
     [7436755782] = "GaG", -- GaG
     [7095682825] = "Beaks", -- Beaks
-    [994732206] = "Blox Fruit"
+    [994732206] = "Blox Fruit",
+    [4658598196] = "AOTR"
 }
 local gameId = game.GameId
 if supportedGames[gameId] then
@@ -56,8 +61,7 @@ if supportedGames[gameId] then
         }
     )
     if scriptID[gameId] then
-        local auth_url =
-            game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/keysystem.lua")
+        local auth_url = game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/keysystem.lua")
         local auth = loadstring(auth_url)()
         local auth_status = auth(scriptID[gameId])
         repeat
