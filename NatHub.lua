@@ -9,7 +9,8 @@ if premium then
         [4777817887] = "https://api.luarmor.net/files/v4/loaders/d53370331c9ca16ce3479c3ac6ae5a78.lua", -- Bladeball
         [7095682825] = "https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/beaks.lua", -- Beaks
         [994732206] = "https://api.luarmor.net/files/v4/loaders/446a745866c1abf8459657502b7818fc.lua", -- Blox Fruit
-        [4658598196] = "https://api.luarmor.net/files/v4/loaders/27394fa4dc9c7268a839f2c98b6a35f7.lua"
+        [4658598196] = "https://api.luarmor.net/files/v4/loaders/27394fa4dc9c7268a839f2c98b6a35f7.lua", -- Attack On Titan R
+        [6331902150] = "https://api.luarmor.net/files/v3/loaders/0771107275ffabca9221c264306214f9.lua" -- Forsaken
     }
     scriptID = {
         [7436755782] = "483d639ad74a7814ff1057d68cec56c2", -- Grow a Garden
@@ -17,7 +18,8 @@ if premium then
         [6325068386] = "a0ad31cf58a8bd98dd82fa1fb648290f", -- BLR
         [4777817887] = "d53370331c9ca16ce3479c3ac6ae5a78", -- BB
         [994732206] = "446a745866c1abf8459657502b7818fc",
-        [4658598196] = "27394fa4dc9c7268a839f2c98b6a35f7"
+        [4658598196] = "27394fa4dc9c7268a839f2c98b6a35f7",
+        [6331902150] = "0771107275ffabca9221c264306214f9"
     }
 else
     supportedGames = {
@@ -28,7 +30,8 @@ else
         [4777817887] = "https://api.luarmor.net/files/v4/loaders/6f48a7a95292a0885256d242900d81fb.lua", -- Bladeball
         [7095682825] = "https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/beaks.lua", -- Beaks
         [994732206] = "https://api.luarmor.net/files/v4/loaders/1ba7f8bc6888d119d65cdafbe3d78527.lua", -- Blox Fruit
-        [4658598196] = "https://api.luarmor.net/files/v4/loaders/5698b5c40f0217c268e673ef5e7b6581.lua"
+        [4658598196] = "https://api.luarmor.net/files/v4/loaders/5698b5c40f0217c268e673ef5e7b6581.lua", -- AOTR
+        [6331902150] = "https://api.luarmor.net/files/v3/loaders/811768c852543782f63839177a263d53.lua" -- Forsaken
     }
     scriptID = {
         --[7436755782] = "65c66a87b33565a9dea1a54b798b6b2a", -- Grow a Garden
@@ -36,7 +39,8 @@ else
         [6325068386] = "50ba70185011d66f3ed97e4e7f50bd11", -- BLR
         [4777817887] = "6f48a7a95292a0885256d242900d81fb", -- BB
         [994732206] = "1ba7f8bc6888d119d65cdafbe3d78527",
-        [4658598196] = "5698b5c40f0217c268e673ef5e7b6581"
+        [4658598196] = "5698b5c40f0217c268e673ef5e7b6581",
+        [6331902150] = "811768c852543782f63839177a263d53"
     }
 end
 local gameNames = {
@@ -47,7 +51,8 @@ local gameNames = {
     [7436755782] = "GaG", -- GaG
     [7095682825] = "Beaks", -- Beaks
     [994732206] = "Blox Fruit",
-    [4658598196] = "AOTR"
+    [4658598196] = "AOTR",
+    [6331902150] = "Forsaken"
 }
 local gameId = game.GameId
 if supportedGames[gameId] then
