@@ -34,7 +34,7 @@ else
         [6331902150] = "https://api.luarmor.net/files/v4/loaders/811768c852543782f63839177a263d53.lua" -- Forsaken
     }
     scriptID = {
-        [7436755782] = "65c66a87b33565a9dea1a54b798b6b2a", -- Grow a Garden
+        --[7436755782] = "65c66a87b33565a9dea1a54b798b6b2a", -- Grow a Garden
         [7018190066] = "a3e99a8c1a465fc973e7aa0dda0e220c", -- Dead Rails
         [6325068386] = "50ba70185011d66f3ed97e4e7f50bd11", -- BLR
         [4777817887] = "6f48a7a95292a0885256d242900d81fb", -- BB
