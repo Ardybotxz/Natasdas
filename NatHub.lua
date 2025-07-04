@@ -55,6 +55,6 @@ if script_id then
         local auth_status = auth(script_id)
         repeat task.wait() until auth_status.validated
     end
-    if premium then premium = true; is_premium = true end
+    if premium then script_key = script_key; premium = true; is_premium = true end
     _function.load("https://api.luarmor.net/files/v4/loaders/" .. script_id .. ".lua")
 end
