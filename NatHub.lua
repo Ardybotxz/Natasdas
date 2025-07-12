@@ -50,7 +50,7 @@ if script_id then
             Duration = 5
         }
     )
-    if not premium and script_id ~= "65c66a87b33565a9dea1a54b798b6b2a" then
+    if not premium then
         local auth = _function.load("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/keysystem.lua")
         local auth_status = auth(script_id)
         repeat task.wait() until auth_status.validated
