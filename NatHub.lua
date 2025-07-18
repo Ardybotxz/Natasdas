@@ -10,7 +10,8 @@ local _function = {
             elseif g == 4777817887 then return "d53370331c9ca16ce3479c3ac6ae5a78" -- Blade Ball
             elseif g == 994732206 then return "446a745866c1abf8459657502b7818fc" -- Blox Fruit
             elseif g == 4658598196 then return "27394fa4dc9c7268a839f2c98b6a35f7" -- Attack On Titan Revolution
-            elseif g == 6331902150 then return "0771107275ffabca9221c264306214f9" end -- Forsaken 
+            elseif g == 6331902150 then return "0771107275ffabca9221c264306214f9" -- Forsaken
+            elseif g == 7709344486 then return "4039bc61ee76ab6f5247b15a0ebf5f60" end -- Steal a Brainrot
         else
             if g == 7436755782 then return "65c66a87b33565a9dea1a54b798b6b2a" -- Grow a Garden
             elseif g == 7018190066 then return "a3e99a8c1a465fc973e7aa0dda0e220c" -- Dead Rails
@@ -19,7 +20,8 @@ local _function = {
             elseif g == 4777817887 then return "6f48a7a95292a0885256d242900d81fb" -- Blade Ball
             elseif g == 994732206 then return "1ba7f8bc6888d119d65cdafbe3d78527" -- Blox Fruit
             elseif g == 4658598196 then return "5698b5c40f0217c268e673ef5e7b6581" -- Attack On Titan Revolution
-            elseif g == 6331902150 then return "811768c852543782f63839177a263d53" end -- Forsaken 
+            elseif g == 6331902150 then return "811768c852543782f63839177a263d53" -- Forsaken 
+            elseif g == 7709344486 then return "36bb351f4d722c58af15efcb417b67da" end -- Steal a Brainrot
         end
     end,
     ["gamename"] = function()
@@ -32,6 +34,7 @@ local _function = {
         elseif g == 994732206 then return "Blox Fruit"
         elseif g == 4658598196 then return "Attack On Titan Revolution"
         elseif g == 6331902150 then return "Forsaken"
+        elseif g == 7709344486 then return "Steal a Brainrot"
         end
     end,
     ["load"] = function(url)
