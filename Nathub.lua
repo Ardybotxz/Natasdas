@@ -1,1 +1,1 @@
-https://pastefy.app/sCzFhmf9/raw%22))()
+https://pastefy.app/sCzFhmf9/raw
